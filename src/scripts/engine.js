@@ -1,22 +1,22 @@
-var cards = [];
-
-var caminhosDasImagens = [
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p0.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p1.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p2.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p3.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p4.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p5.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p6.jpg',
-  'https://github.com/naejshaw/desafio-jogo-da-memoria/blob/main/src/assets/images/p7.jpg',  
+var cards = [
+    "♨_♨",
+    "♨_♨",
+    "(•ˋ _ ˊ•)",
+    "(•ˋ _ ˊ•)",
+    "(⓿_⓿)",
+    "(⓿_⓿)",
+    "(✿◕‿◕✿)",
+    "(✿◕‿◕✿)",
+    "¯\_(ツ)_/¯",
+    "¯\_(ツ)_/¯",
+    "༼ つ ◕_◕ ༽つ",
+    "༼ つ ◕_◕ ༽つ",
+    "(☞ﾟヮﾟ)☞",
+    "(☞ﾟヮﾟ)☞",
+    "☜(ﾟヮﾟ☜)",
+    "☜(ﾟヮﾟ☜)",
 ];
 
-// Loop para criar e adicionar imagens ao array
-for (var i = 0; i < caminhosDasImagens.length; i++) {
-  var card = new Image();
-  card.src = caminhosDasImagens[i];
-  cards.push(card);
-}
 let openCards = [];
 
 let shuffleCards = cards.sort(() => (Math.random() > 0.5 ? 2 : -1));
